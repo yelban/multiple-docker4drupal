@@ -1,12 +1,12 @@
 # Multipe Docker4Drupal
 Multiple docker zones of docker4drupal
-***
+
 
 ### Getting Started
 ##### Start Traefik
 * `cd ./traefix`
 * `docker-compose up -d`
-***
+
 
 ## Add Zone 1
 ##### Add Zone 1 network
@@ -21,7 +21,7 @@ Multiple docker zones of docker4drupal
 
 ##### Installing Drupal with Drush
 * `docker-compose exec php drush si standard --db-url=mysql://client001:client001.000@mariadb/drupal --account-name=admin --account-pass=password --site-name=zone01 --site-mail=noreply@example.com --locale=zh-hant -y`
-***
+
 
 ## Add Zone 2
 ##### Add Zone 2 network
@@ -36,7 +36,7 @@ Multiple docker zones of docker4drupal
 
 ##### Installing Drupal with Drush ( Japanese )
 * `docker-compose exec php drush si standard --db-url=mysql://client002:client002.000@mariadb/drupal --account-name=admin --account-pass=password --site-name=zone01 --site-mail=noreply@example.com --locale=ja -y`
-***
+
 
 ## Add Zone 3
 ##### Add Zone 3 network
